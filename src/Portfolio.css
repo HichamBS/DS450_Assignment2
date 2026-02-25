@@ -1,0 +1,132 @@
+/* Portfolio Section Styles */
+.portfolio-section {
+    padding: 10px 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+  
+.portfolio-container {
+    max-width: 1000px;
+    width: 100%;
+    padding: 0 20px;
+}
+  
+.portfolio-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 3rem;
+    position: relative;
+}
+  
+.portfolio-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #272727;
+}
+
+/* Flexbox cards*/
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+  
+/* Card design */
+.project-card {
+    width: 420px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+  
+.project-image {
+    width: 100%;
+    height: 220px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.project-image-placeholder {
+    color: white;
+    font-weight: 600;
+}
+  
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.project-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+  
+.project-title {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: 700;
+}
+  
+.project-description {
+    margin: 0;
+    color: #666;
+    line-height: 1.6;
+}
+  
+/* Technologies */
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+  
+.tech-badge {
+    background-color: #e7e7e766;
+    color: #333;
+    padding: 0.4rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+  
+/* Buttons */
+.project-buttons {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+  
+.project-btn {
+    flex: 1;
+    text-align: center;
+    padding: 0.6rem 0.9rem;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+  
+.project-btn.outline {
+    background-color: gray;
+    color: white;
+    border: none;
+}

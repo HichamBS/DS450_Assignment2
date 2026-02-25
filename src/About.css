@@ -1,0 +1,99 @@
+/* About Section Styles */
+.about-section {
+    padding: 10px 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+  
+.about-container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.about-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 3rem;
+    position: relative;
+}
+  
+.about-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #272727;
+}
+  
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+}
+  
+.about-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.photo-placeholder {
+    width: 300px;
+    height: 320px;
+    background-color: #333;
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+  
+.about-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 650px;
+    color: #666;
+    line-height: 1.6;
+}
+  
+.about-text p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+  
+.skills-title {
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+  
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+  
+.skill-badge {
+    background-color: #e7e7e766;
+    color: #333;
+    padding: 0.4rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
